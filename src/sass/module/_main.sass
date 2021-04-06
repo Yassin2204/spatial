@@ -1,0 +1,246 @@
+//Début de l'éxo
+.photo
+    width: 60%
+    display: flex
+    align-items: start
+    justify-content: space-between
+    margin: 0 auto
+    padding: 5rem 0
+    .photog
+        width: 45%
+        .photog-title
+            font-size: 3.3rem
+            line-height: 5rem
+            color: #444
+            margin: 0
+        .photog-text
+            font-size: 1.9rem
+            line-height: 2.8rem
+            color: #aaa
+    .photod
+        width: 48%
+        p
+            font-size: 1.25rem
+            line-height: 2.2rem
+            color: #999
+// Suite
+.photo2
+    background-color: #eee
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 5rem 0
+    .photo2-title
+        font-size: 3.3rem
+        color: #444
+        margin-bottom: 1rem
+    .photo2-text
+        font-size: 1.9rem
+        margin: 0
+        color: #bbb
+    .photo2-cards
+        display: flex
+        justify-content: space-between
+        width: 78%
+        padding-top: 8rem
+        .photo2-card
+            width: 700px
+            img
+                width: 700px
+                vertical-align: bottom
+            p
+                background-color: #fff
+                margin: 0
+                text-align: center
+                font-size: 1.5rem
+                font-weight: bold
+                color: #444
+                padding: 3rem 0
+                box-shadow: inset 0 -1px 0 2px #ddd
+    .photo2-buttons
+        padding: 1.5rem
+        margin: 4rem 0 
+        .photo2-button
+            text-decoration: none
+            color: white
+            font-size: 1.5rem
+            font-weight: bold
+            margin: 0 0.6rem
+            padding: 1.5rem 3rem
+            border-radius: 5px
+        .red
+            background-color: #ff2b59
+        .black
+            background-color: #333
+// Suite exooo
+.photo3
+    width: 75%
+    margin: 0 auto
+    .photo3-title
+        font-size: 3.2rem
+        margin-bottom: 2rem
+        color: #444
+        justify-content: center
+        align-items: center
+        text-align: center
+    .photo3-text
+        font-size: 1.9rem
+        margin: 0
+        color: #bbb
+        justify-content: center
+        align-items: center
+        text-align: center
+
+    .photo3-wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        padding-top: 5rem
+        .photo3-card
+            display: flex
+            width: 47%
+            padding-bottom: 3rem
+            .photo3-left
+                .title
+                    color: #444
+                .subtitle
+                    color: #aaa
+                .text
+                    color: #888
+                    font-size: 1.1rem
+                    line-height: 2rem
+                    margin-top: 1.5rem
+            .photo3-right
+                .photo3-wrapper
+                    width: 200px
+                    img
+                        width: 100%
+                        border-radius: 100%
+                        border: 0.5rem solid #ddd
+
+.tout
+    display: flex
+    background-image: url("../images/banner.jpg")
+    width: 100%
+    height: 260px
+    .avantfin
+    background-color: rgba(46, 47, 56, 0.75)
+    background-position: 50 50
+    background-size: cover
+    background-position: center
+    width: 100%
+    height: 260px
+    color: white
+    justify-content: center
+    align-items: center
+    text-align: center
+    h1
+        font-size: 40px
+        padding-top: 7%
+        justify-content: center
+        align-items: center
+        text-align: center
+    p
+        font-size: 20px
+        justify-content: center
+        align-items: center
+        text-align: center
+    .br
+        background-color: #d62626
+        color: white
+        padding: 2%
+        border: solid #d62626 1px
+        border-radius: 5px
+        margin: 2%
+        margin-bottom: 8%
+        
+
+@media screen and ( max-width: 1650px )
+    .photo
+        width: 70%
+@media screen and ( max-width: 1410px )
+    .photo
+        flex-direction: column
+        .photog
+            width: auto
+        .photod
+            width: auto
+@media screen and ( max-width: 768px )
+    .photo
+        .photog 
+            .photo-title
+                font-size: 2.2rem
+            .photo-text
+                font-size: 1.25rem
+@media screen and ( max-width: 1900px )
+    .photo2
+        .photo2-cards 
+            .photo2-card
+                width: 35vw
+                img
+                    width: 35vw
+                p
+                    font-size: 1.8vw
+@media screen and ( max-width: 800px )
+    .photo2
+        .photo2-title
+            text-align: center
+        .photo2-text
+            margin: 0 2vw
+            font-size: 3vw
+        .photo2-cards
+            padding-top: 4rem
+            flex-direction: column
+            .photo2-card
+                width: 75vw
+                margin-bottom: 5rem
+                img
+                    width: 75vw
+                p
+                    font-size: 2.5vw
+        .photo2-buttons
+            margin-top: 0
+@media screen and ( max-width: 670px )
+    .photo2
+        .photo2-buttons
+            width: 80%
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 0
+            text-align: center
+            .red
+                margin-bottom: 2rem
+            .photo2-button
+                width: inherit
+@media screen and ( max-width: 1852px )
+    .photo3
+        width: 100%
+        .photo3-wrapper
+            flex-direction: column
+            align-items: center
+            .vulputate-card
+                width: 670px
+@media screen and ( max-width: 768px )
+    .photo3
+        text-align: center
+        .photo3-wrapper
+            .photo3-card
+                flex-direction: column
+                width: auto
+                .photo3-left
+                    margin: 0
+                    text-align: center
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    order: 1 !important
+                    p
+                        width: 400px
+                .photo3-right
+                    margin: 0 auto
+                    margin-bottom: 2rem
+    .order
+        order: 0 !important
+         

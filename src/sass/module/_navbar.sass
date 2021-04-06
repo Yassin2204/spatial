@@ -1,0 +1,68 @@
+.nav
+    background: url("../images/banner.jpg") no-repeat
+    background-size: cover
+    height: 900px
+    .avant
+        height: 900px
+        background-color: rgba(46, 47, 56, 0.75)
+        display: flex
+        align-items: center
+        flex-direction: column
+        .avant2
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding-top: 4rem
+            font-size: 1.3rem
+            .avantgauche
+                color: white
+            .avantdroite
+                margin-right: 4%
+                a
+                    margin: 4px
+                    color: white
+    .milieu
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: inherit
+        .h1
+            font-size: 4rem
+            color: white
+            margin: 0
+        .texte
+            width: 60%
+            font-size: 1.7rem
+            text-align: center
+            color: #8d8d8d
+            line-height: 2.5rem
+        .br
+            color: white
+            font-size: 1.3rem
+            background-color: #ff2b59
+            padding: 1.5rem 4rem
+            border-radius: 5px
+            font-weight: bold
+            margin-top: 2rem
+            text-decoration: none
+            margin-bottom: 6rem
+@media screen and ( max-width: 850px )
+    .nav
+        .avant
+            .avant2
+                flex-direction: column
+                .avantgauche
+                    margin: 0
+                    margin-bottom: 1.5rem
+@media screen and ( max-width: 520px )
+    .nav
+        .avant
+            .avant2
+                .avantdroite
+                    margin: 0
+                    display: flex
+
+        
+        
